@@ -1,0 +1,22 @@
+@import "bootswatch/paper/variables";
+@import "bootstrap";
+@import "bootstrap/theme";
+@import "bootswatch/paper/bootswatch";
+@import "Chat";
+@import "Photos";
+@import "Settings";
+
+#application-tab-panel {
+  height: 100vh;
+  &, > .tab-content, > .tab-content > .active {
+    display: flex;
+  }
+  &, > .tab-content {
+    flex-direction: column;
+  }
+  > .tab-content {
+    &, > .tab-pane, .application-tab {
+      flex: 1;
+    }
+  }
+}
